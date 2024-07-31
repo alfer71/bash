@@ -9,6 +9,10 @@ output_dir="reports"
 # Create output directory if it doesn't exist
 mkdir -p "$output_dir"
 
+# SSH credentials
+username="afernandez"
+ssh_key_path="~/.ssh/id_rsa"  # Update with your SSH private key path
+
 # Loop through each server
 for server in "${servers[@]}"; do
     echo "Running script on $server..."
